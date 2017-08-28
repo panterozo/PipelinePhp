@@ -16,7 +16,3 @@ en la siguiente rama <b>$/Mantenciones/Liberaciones/Liberaciones/&lt;NombreProye
 * **Nombre Apellido**
 * **Ignacio Álvarez**
 
-## Licencia
-Producto de LarrainVial
-
-[![N|Solid](https://larrainvial.com/content/images/logo.jpg)](https://www.larrainvial.com)

@@ -8,7 +8,7 @@ pipeline {
 									echo "Multiline Shell Steps Works too"
 									echo 
 								'''
-								bat 'java --version'
+								bat 'java -version'
 								bat 'showJavaVersion.bat'
             }
         }

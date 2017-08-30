@@ -19,6 +19,7 @@ pipeline {
 				stage('Example') {
             steps { 
                 bat 'echo Hello World'
+								input "Does the envieroment looks ok?"
             }
         }
 				stage('Any Name') {
@@ -29,9 +30,6 @@ pipeline {
     }
 		post {
         always {
-						mail to: 'igalvarez@larrainvial.com',
-            subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-            body: "Something is wrong with ${env.BUILD_URL}"
             echo 'This will always run'
         }
         success {

@@ -6,10 +6,15 @@ pipeline {
                 bat 'git --version'
 								bat '''
 									echo "Multiline Shell Steps Works too"
-									echo 
+									echo "otra linea"
 								'''
 								bat 'java -version'
 								bat 'showJavaVersion.bat'
+            }
+        }
+				stage('Example') {
+            steps { 
+                bat 'echo Hello World'
             }
         }
     }

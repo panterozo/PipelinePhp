@@ -29,6 +29,9 @@ pipeline {
     }
 		post {
         always {
+						mail to: 'igalvarez@larrainvial.com',
+            subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+            body: "Something is wrong with ${env.BUILD_URL}"
             echo 'This will always run'
         }
         success {

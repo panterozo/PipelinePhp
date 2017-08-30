@@ -17,6 +17,11 @@ pipeline {
                 bat 'echo Hello World'
             }
         }
+				stage('Any Name') {
+            steps { 
+                bat 'echo "Puede tener cualquier nombre"'
+            }
+        }
     }
 		post {
         always {
